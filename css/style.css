@@ -11,6 +11,10 @@ h1 {
   margin: 20px;
   font-size: 80px;
   color: blueviolet;
+  text-align: center;
+}
+span {
+  text-align: center;
 }
 
 h2 {
@@ -23,7 +27,7 @@ h2 {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -49,11 +53,11 @@ nav li:hover {
 
 /* main */
 
-.welcome {
+/* .welcome {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 /* first cards section "Pink" */
 
@@ -66,18 +70,36 @@ nav li:hover {
 .cards {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   padding: 20px;
   gap: 10px;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   box-shadow: 0px 6px 12px 10px #99545466;
   padding: 20px;
   border-radius: 5%;
+}
+
+.item1 {
+  background-color: #470366;
+  order: 2;
+  flex-shrink: 2;
+}
+.item2 {
+  background-color: #0dc523;
+  order: 4;
+}
+.item3 {
+  background-color: #004eb4;
+  order: 3;
+}
+.item4 {
+  background-color: #f02727;
+  order: 1;
 }
 
 .image {
@@ -110,3 +132,7 @@ nav li:hover {
   padding: 20px;
   border-radius: 5%;
 }
+
+/* section {
+  display: flex;
+} */
