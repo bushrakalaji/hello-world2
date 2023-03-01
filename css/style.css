@@ -2,7 +2,11 @@
 
 body {
   background-color: beige;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Heading h1 h2 ... h6 */
@@ -13,7 +17,8 @@ h1 {
   color: blueviolet;
   text-align: center;
 }
-span {
+
+p {
   text-align: center;
 }
 
@@ -27,13 +32,16 @@ h2 {
 
 header {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
+  font-family: "Shantell Sans";
+  font-style: italic;
+  font-weight: 300;
 }
 
 /* logo */
 
-a {
+.logo {
   text-decoration: none;
   font-size: 30px;
   font-weight: bolder;
@@ -46,9 +54,11 @@ nav li {
   padding: 10px;
   margin: 10px;
   font-size: 20px;
+  color: #15001f;
 }
 nav li:hover {
-  background-color: blue;
+  background-color: rgb(209, 209, 242);
+  border-radius: 10%;
 }
 
 /* main */
@@ -97,15 +107,26 @@ nav li:hover {
   background-color: #004eb4;
   order: 3;
 }
+
 .item4 {
   background-color: #f02727;
   order: 1;
 }
 
 .image {
-  max-width: 300px;
-  border-radius: 10%;
+  width: 100%;
+}
+
+.img-container {
   border: 2px solid rgb(180, 132, 132);
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10%;
+  max-height: 300px;
+}
+
+.img-container:hover img {
+  width: 120%;
 }
 
 /* second card section "Green" */
